@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh_hk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        /* 为 .video-menu 下的 a 元素添加样式 */
+        .video-menu a {
+            display: inline-block; /* 确保可以应用边框 */
+            padding: 8px 16px; /* 添加内部间距 */
+            text-decoration: none; /* 去除下划线 */
+            color: #ffffff; /* 设置字体颜色 */
+            background-color: #0370ec; /* 设置背景颜色 */
+            border: 2px solid #0370ec; /* 添加边框 */
+            border-radius: 50px; /* 圆角效果 */
+        }
+
+        /* 当鼠标悬停在链接上时的样式 */
+        .video-menu a:hover {
+            background-color: #11b0ec; /* 鼠标悬停时改变背景色 */
+            border-color: #11b0ec; /* 鼠标悬停时改变边框颜色 */
+        }
+    </style>
+    <!-- 添加JavaScript代码 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取视频课程下的链接元素
+            const videoLink = document.querySelector('.video-menu a');
+            videoLink.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止默认的跳转行为
+
+                // 跳转到显示视频的页面（假设为同一目录下的 'video-page.html'）
+                window.location.href = 'vedio.html';
+            });
+        });
+    </script>
+</head>
+    <h1 style="font-family:华文行楷;color: #834038;text-align: center;font-size: 72px;">螺  蛳  历  史</h1>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <ul>
+
+            <div class="dropdown-content">
+                <!-- 省略其他课程项 -->
+                <div class="video-menu">
+                    <a href="#">第13课《五四运动》</a>
+                </div>
+
+            </div>
+    </ul>
+
+</body>
+</html>
